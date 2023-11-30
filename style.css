@@ -4,19 +4,59 @@
     border: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./Imagens/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 80px;
+    height: 20vh;
+    background-color: rgb(170, 170, 170);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 40%;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    padding: 10px 0;
+}
+
 header{
-    background: black;
+    
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    position: relative;
+    z-index: 0;
 }
 
 .lados {
-    background:grey;
     width: 45vw;
     height: 100vh;
-
+    position: relative;
 }
 .subcaixa {
     background :rgb(157, 157, 157);
@@ -63,12 +103,23 @@ header{
 
 }
 .lados2 {
-    background:grey;
     width: 100%;
     height: 48% ;
+    position: relative;
+    margin: 10px 0;
 }
+
+.bg-opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:grey;
+    opacity: 0.8;
+    z-index: 0;
+    border-radius: 20px;
+}
+
 .subcaixa2 {
-    background :rgb(157, 157, 157);
     display: flex;
     height: 50%;
     margin: 30px 60px;
@@ -79,17 +130,17 @@ header{
     text-align: center;
 }
 section{
-    background: black;
+    
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 #telefone{
+    width: 80vw;
     flex-direction: column;
 }
 .subcaixa3 {
-    background :rgb(157, 157, 157);
     display: flex;
     height: 30%;
     margin: 40px 30px;
@@ -101,8 +152,8 @@ section{
     justify-content: center;
 }
 #A4 img{
-    width:  18%;
-    height: 8%;
+    width:  29%;
+    height: 38%;
     margin: 10px;
 }
 .imagen-pag2{
@@ -113,6 +164,7 @@ section{
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+    align-items: flex-end;
 }
 #A4{
     display: flex;
@@ -124,4 +176,9 @@ section{
     width: 50%;
     height: 100%;
    
+}
+
+.subcaixa2, .imagen-pag2, .texto-pag2, .subtitulo, .subcaixa, .titulo, .lados img{
+    position: relative;
+    z-index: 2;
 }
