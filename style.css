@@ -97,6 +97,7 @@ header{
 #A1 img {
     width:  100%;
     height: 80%;
+    border-radius: 20px;
     
     
     
@@ -113,7 +114,8 @@ header{
     width: 100%;
     height: 100%;
     position: absolute;
-    background:grey;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7707457983193278) 8%, rgba(8,66,115,0.7343312324929971) 36%, rgba(0,212,255,0.3897934173669467) 100%);
     opacity: 0.8;
     z-index: 0;
     border-radius: 20px;
@@ -152,9 +154,9 @@ section{
     justify-content: center;
 }
 #A4 img{
-    width:  29%;
+    width:  38%;
     height: 38%;
-    margin: 10px;
+    margin: -45px;
 }
 .imagen-pag2{
     display: flex;
