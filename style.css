@@ -27,7 +27,7 @@ body{
 nav{
     width: 80px;
     height: 20vh;
-    background-color: rgb(170, 170, 170);
+    background-color: rgba(170, 170, 170, 0.5);
     display: flex;
     flex-direction: column;
     position: absolute;
